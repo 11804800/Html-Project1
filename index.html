@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Head Component of the html file -->
+
+<head>
+
+    <!-- character coding meta tag -->
+    <meta charset="UTF-8">
+
+    <!-- icon on the title link -->
+    <link rel="icon" type="image/jpeg" href="/Image1.jpeg" />
+
+    <!-- viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title tag -->
+    <title>My Travel Blog</title>
+
+    <!-- css file importing link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- head end here -->
+
+<!-- body starts here -->
+
+<body>
+
+    <!-- header starts here -->
+    <header>
+
+        <!-- nav bar starts here -->
+        <nav>
+            <!-- nav list starts here -->
+            <ul>
+                <!-- To all the elements in this list i have applied animate_fadeIn class which i have created in style.css file please visit -->
+                <li class="animate_fadeIn">
+                    <a href="#">Home</a>
+                </li>
+                <li class="animate_fadeIn" style="animation-delay: 100ms;">
+                    <a href="#">Blog1</a>
+                </li>
+                <li class="animate_fadeIn" style="animation-delay: 200ms;">
+                    <a href="#">Blog2</a>
+                </li>
+                <li class="animate_fadeIn" style="animation-delay: 300ms;">
+                    <a href="#">Blog3</a>
+                </li>
+                <li class="animate_fadeIn" style="animation-delay: 400ms;">
+                    <a href="#">About Me</a>
+                </li>
+                <li class="animate_fadeIn" style="animation-delay: 500ms;">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+            <!-- nav list ends here -->
+        </nav>
+        <!-- nav bar ends here -->
+
+
+        <!-- section in  header stats here -->
+
+        <!-- I have given id to this section header_summary and applied css using the id selector in style.css file -->
+        <section id="header_summary">
+
+            <!-- Animated the title of header_summary section using animate_slideIn class which i have created in style.css file -->
+            <h1 class="animate_slideIn">My Travel Blog</h1>
+
+            <!-- animated the paragarh in header_summary section using animate_fadeIn and gave it animated delay of 0.1s -->
+            <p class="animate_fadeIn" style="animation-delay: 100ms;">Welcome to my travel blog! I'm Nikhil Pathak, And
+                I am front Madhya Pradesh the land of forest and love to
+                Travel along and explore the nature.
+                Join me on my journey and i will introduce you to the beautiful animal and natural things that comes
+                from
+                nature around the World. In this blog i'll showcase you my travel adventures, photography and insights
+                from
+                the road. Whether you're a fellow wanderlust or an armchair traveller. T hope you enjoy following along
+                me
+                on my trips near and far. Let's explore this beautiful planet together.
+            </p>
+
+        </section>
+        <!-- section ends here -->
+    </header>
+    <!-- header ends here -->
+
+    <!-- main section starts here -->
+    <main>
+
+        <!-- blog article starts here -->
+        <article id="blog_article">
+            <!-- This article only contains blogs and i have given all the blog same class name blog_section  -->
+            <!-- All this blog_sections contains h2,p,img,video and section tags actually nested section -->
+
+            <!-- Blog 1 section starts here -->
+
+            <section class="blog_section" id="blog1">
+                <section>
+
+                    <!-- Applied animate_fadeIn class -->
+                    <h2 class="animate_fadeIn">My Adventure to Choti Tumbi</h2>
+
+                    <!-- applied light_text class which i have created in style.css file -->
+                    <p class="light_text animate_fadeIn">I recently visited Choti Tumbi Pahad which is in Mundaria,
+                        which is about 80km away from my home town
+                        and trust me this is Scene was very beautiful from the top. Some highlights from my trip.
+                    </p>
+
+                    <!-- applied blog_media for width height and blog_media1 for hover effect and animation of fade -->
+                    <img src="./Image1.jpg" class="blog_media animate_fadeIn blog_media1" />
+
+                    <!-- applied bold_text class which will make the text look bold  i have created this class in style.css file-->
+                    <ul class="bold_text">
+                        <li>Rode Bike about 10km to Reach the Top for the beautiful Scene.</li>
+                        <li>Walked 2km down from the top to Reach the waterfall which drop over 20km.</li>
+                        <li>Again Rode Bike to the Clif Hanging Point for another beautiful Spot and photography.</li>
+                        <li>Went Vanbihar for learning more about point and Area.</li>
+                    </ul>
+
+                    <!-- applied blog_media for width height and animate_fadeIn -->
+                    <video src="./Video1.mp4" controls muted class="blog_media animate_fadeIn" />
+                </section>
+
+                <!-- applied medium_text class for font-weight:500 class from style.css file  and animated_fadeIn-->
+
+                <!-- I have given animation timeline:view(500px 0px) view(topoffset bottomoffset) this means that when the user will
+               scroll the page and this particular section will come to view and then the animation will start from element 0px from
+                 the bottom and ends before 500px from the top -->
+
+                <p class="medium_text animate_fadeIn" style="animation-timeline: view(500px 0px);">
+                    I found the people from Mundaria very welcoming and humble towards the travelers. The place was very
+                    clamming and peacefull and greeny will make you feel like you are in heaven
+                    and fresh air will blow your hair and make you feel fresh. You visit this place after rainy season.
+                </p>
+            </section>
+            <!-- blog1 section ends here -->
+
+            <!-- blog2 section starts here -->
+            <section class="blog_section" id="blog2">
+
+                <!-- Same as section above -->
+                <section>
+                    <h2 class="animate_fadeIn">Vovage to the Holy Shrine of Maa Vaishno</h2>
+                    <p class="light_text animate_fadeIn" style="animation-delay: 100ms;">Maa Vaishno Devi's Temple is
+                        considered to be one of the holiest place in India as it is loacted near Katra in Jammu.
+                        Millions of people visit This
+                        temple over a year and it is secured by the Indian Army.It is also famous for devotion and There
+                        is belief that who ever comes to this place never goes
+                        empty stomach and empty hands "Mata Subki Muradein Puri Karti Hain".
+                    </p>
+                    <img src="./Image2.jpg" class="blog_media blog_media1  animate_fadeIn" />
+                    <ul class="bold_text animate_fadeIn">
+                        <li>I Started My journey from the base of the Temple of the Holy bare foot along with fellow
+                            devotees. Which is about 12 Kms.</li>
+                        <li>While Walking i got know story behind the Holy cave and Maa Vaishno Devi's Temple.</li>
+                        <li>Before Reaching to the temple I cleaned my foots and hands in the lake before the temple
+                            which is also a Holy Ganga lake.</li>
+                        <li>After The Darhsan I went for another temple Visit which has belief that the one who is
+                            visiting the temple must visit Kalbhairav mandir.</li>
+                    </ul>
+                    <video src="./Video.mp4" controls muted class="blog_media animate_fadeIn" />
+                </section>
+                <p class="medium_text animate_fadeIn animate_timing" style="animation-timeline: view(500px 0px);">
+                    This Place is full of Kind People and devotees all the time. And I found my peace of mind after
+                    having Darhsan of mata Vaishno Devi and I think that evryone
+                    should visit this place Once in a while.
+                </p>
+            </section>
+            <!-- blog2 section ends here -->
+
+            <!-- blog3 section starts here -->
+            <section class="blog_section" id="blog3">
+
+                <!-- same as section above -->
+                <section>
+                    <h2 class="animate_fadeIn">Thrilling Adventure in BandhavGarh National Park</h2>
+                    <p class="light_text animate_fadeIn">India's Most Loved Tour Destination for Tigers BandhavGarh
+                        National Park. it is one of the famous place to visit in Madhya Pradesh and It Shows us that how
+                        a conservation And
+                        awareness can safeGuared Endangered Species. it is about 32 kms from Umaria Railway station.</p>
+                    <img src="./Image3.jpg" class="blog_media blog_media1 animate_fadeIn" />
+                    <ul class="bold_text animate_fadeIn">
+                        <li>Firstly I reached Umaria Railway Station and Then Took bus for BandhavGarh National Park.
+                        </li>
+                        <li>There I Hire a Safari jeep and Tour Guide to visit the Park because it is neccassary.</li>
+                        <li>After riding for two hours we get to see a real tiger drink the water from the lake.</li>
+                        <li>I got thrilled by watching a real tiger and getting goosebumps.</li>
+                        <li>
+                            There was a life threat but the thrill was teeth-chilling and Guide made Relax that No need
+                            to worry.
+                        </li>
+                    </ul>
+                    <video src="./Video.mp4" controls muted class="blog_media animate_fadeIn" />
+                </section>
+                <p class="medium_text animate_fadeIn" style="animation-timeline: view(500px 0px);">
+                    It is truly and addictive destination and getting bonded with it is inevitable So, place has my
+                    heart and after visiting and getting the glimpse of Tiger and Some other animal. I got goosebumps
+                    and it made think that how happily they live in This
+                    forest.
+                </p>
+            </section>
+            <!-- blog3 section ends here -->
+
+        </article>
+        <!-- blog article ends here -->
+
+        <!-- about me article starts here -->
+
+        <!-- I have given animation timeline:view(500px 0px) view(topoffset bottomoffset) this means that when the user will
+    scroll the page and this particular section will come to view and then the animation will start from element 0px from
+        the bottom and ends before 500px from the top -->
+        <article id="aboutme" class="animate_fadeIn" style="animation-timeline: view(500px 0px);">
+            <h2 class="animate_fadeIn">About Me</h2>
+            <p class="animate_slideIn">Hi there, I'm Nikhil Pathak and I created this blog to share my passion for
+                travel and adventure!</p>
+            <p class="animate_slideIn">As a software engineer by profession , travel provides the perfect outlet for my
+                curiosity and
+                creativity. This blog allows me to connect with like-minded travelers while documenting my own journey
+                around the globe</p>
+            <p class="animate_slideIn">I hope my stories, Photos and tips will inspire you to step out of your comfort
+                zone, explore new places
+                and create your own memorable expriences Thanks for joining me!</p>
+        </article>
+        <!-- about me article ends here -->
+
+        <!-- contact me article starts here -->
+        <article id="contactme">
+            <h2 class="animate_fadeIn">Contact Me</h2>
+            <form action="" class="animate_slideIn">
+                <label for="name">Name</label>
+
+                <!-- this input type is text and required means it is required to fill this input unless user will not be able to submit the form -->
+                <input type="text" name="name" id="name" placeholder="enter your name" required class="form_input">
+                <label for="email">Email</label>
+                <!-- this input type is email it will validate the emails only plain text will not be passed it only pass like abc@gmail.com  and required means
+                     it is required to fill this input unless user will not be able to submit the form -->
+                <input type="email" id="email" name="email" placeholder="enter your email" required class="form_input">
+                <label for="message">Message</label>
+
+                <!-- this will allow user to write long texts -->
+                <textarea id="message" name="message" placeholder="enter you email" rows="" cols="20" required
+                    class="form_input">
+                </textarea>
+
+                <!-- this will show as button and i have given it Id submit_btn this will submit the form after validation -->
+                <input type="submit" value="Submit" id="submit_btn">
+            </form>
+
+            <!-- I have given animation timeline:view(500px 0px) view(topoffset bottomoffset) this means that when the user will
+               scroll the page and this particular section will come to view and then the animation will start from element 0px from
+                 the bottom and ends before 500px from the top -->
+            <ul type="none" class="animate_fadeIn" style="animation-timeline: view(500px 0px);">
+                <li>
+                    <a href="https://www.linkedin.com/in/nikhil-pathak-28760b17b/" target="_blank">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://github.com/11804800" target="_blank">Github</a>
+                </li>
+                <li>
+                    Nikhilpathak2602@gmail.com
+                </li>
+            </ul>
+        </article>
+        <!-- contact me article ends here -->
+
+    </main>
+    <!-- main section ends here -->
+
+    <!-- footer starts here -->
+    <footer>
+        <article>
+            <section>
+                <!-- small brief about the website -->
+                <h2>
+                    My Travel Blog
+                </h2>
+                <p>It is about my trvalling adventures accross the World exploring nature, animal things. So, Join me in
+                    my journey through my blog and let's together explore the globe</p>
+            </section>
+            <section>
+
+                <!-- nav links at bottom -->
+                <h3>
+                    Links
+                </h3>
+                <ul type="none">
+                    <li>
+                        <a href="#" class="Links">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="Links">Blog1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="Links">Blog2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="Links">Blog3</a>
+                    </li>
+                    <li>
+                        <a href="#" class="Links">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#" class="Links">Contact Us</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+
+                <!-- my contact links and social links -->
+                <h3>
+                    My Social Links
+                </h3>
+                <ul type="none">
+                    <li>
+                        <a href="https://www.linkedin.com/in/nikhil-pathak-28760b17b/" target="_blank"
+                            class="Links">Linkedin</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/11804800" target="_blank" class="Links">Github</a>
+                    </li>
+                    <li>
+                        Nikhilpathak2602@gmail.com
+                    </li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- copy right section -->
+        <p>Copyright@2024 My travel Blog</p>
+    </footer>
+    <!-- footer ends here -->
+</body>
+<!-- body ends here -->
+
+</html>

@@ -1,0 +1,519 @@
+/* this file follows the follwing path 
+1.universal selector
+2.body selector
+3.animations
+4.Header
+5.blog article
+6.about me
+7.contact me
+8.footer
+9.media query
+10.extra css class */
+
+/* universal selector */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* font family given to body which will be adapted by all the elemnts in body */
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* slide in animation class */
+
+/* this animation will be finished in 0.4s and given animation timeline function of linear and it will repeat only once and follows forward path like 0 to 10 */
+.animate_slideIn
+{
+    animation: slideIn .4s linear 1 forwards;
+}
+
+/* this animation will move the element in x-axis position */
+@keyframes slideIn {
+
+    /* At 0% the element will go out of the screen or translate from X-axis 100% from its initial position  */
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    /* at 100% the element will come back to its normal X-axis position */
+    100%
+    {
+        transform: translateX(0%);
+    }
+}
+
+/* fade in animation */
+/* the initial opacity of the element will be 0 it will be blur from the screen */
+/* this animation will be finished in 1s and given animation timeline function of ease-in and it will repeat only once and follows forward path like 0 to 10 */
+.animate_fadeIn
+{
+    opacity: 0;
+    animation: fadeIn 1s ease-in  1 forwards;
+}
+
+/* this animation will change the element opacity */
+@keyframes fadeIn {
+
+    /* at 0% opacity will 0 */
+    0%
+    {
+       opacity: 0;
+    }
+     /* at 50% opacity will 0.5 */
+    50%
+    {
+        opacity: 0.5;
+    }
+     /* at 100% opacity will 1 */
+    100%
+    {
+       opacity: 1;
+    }
+}
+
+/* appling css to nav */
+nav 
+{
+    padding: 8px 4px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: fit-content;
+    background:rgb(104, 104, 176);
+}
+
+/* appling css to the unordered list inside the nav */
+nav ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:50px;
+    list-style: none;
+    font-weight: 600;
+    padding: 4px 11px;
+}
+
+/* appling css to the list items inside the nav unordered list */
+nav ul li 
+{
+    position: relative;
+}
+
+
+
+
+/* appling css to the anchor tag inside the nav unordered-list list-items */
+nav ul li a
+{
+    padding: 1px;
+    color: white;
+}
+
+
+/* appling css to all the anchor tag present inside the html file */
+a
+{
+    text-decoration: none;
+}
+
+/* appling hover pesudo class to nav unordered-list's list-item anchor tag */
+nav ul li a:hover
+{
+    color:white;
+    background-color: rgb(239, 108, 129)
+}
+
+/* appling before pesudo element to nav unordered-list's list-item anchor tag */
+nav ul li a::before
+{
+    position: absolute;
+    content:"";
+    width:10px;
+    left:-10px;
+    top:0;
+    height: 10px;
+    background: transparent;
+    border: 3px solid navy;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+/* appling after pesudo element to nav unordered-list's list-item anchor tag */
+nav ul li a::after
+{
+    position: absolute;
+    content:"";
+    width:10px;
+    right:-10px;
+    bottom:0;
+    height: 10px;
+    background: transparent;
+    border: 3px solid navy;
+    border-left: 0px;
+    border-top: 0px;
+}
+
+
+/* Id selector this is targetting the header section */
+#header_summary
+{
+    background: #000;
+    color: white;
+    padding: 54px 12px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+
+/* we are targetting the paragraph from header_summary section */
+#header_summary p
+{
+    color: rgba(255,255,255,0.7);
+}
+
+/* tag selector targetting the main tag */
+main
+{
+    padding: 4px;
+    background: rgba(240, 237, 237, 0.7);
+}
+
+/* Id selector targetting the blog articles */
+#blog_article
+{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+/* class for all the blog section inside the blog article */
+.blog_section
+{
+    background: white;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.1));
+    min-width:320px;
+    min-height: 100%;
+    padding: 6px 6px;
+    flex:1 0 320px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 60px;
+}
+
+/* it is targetting the section inside the .blog_section class elements */
+.blog_section section
+{
+    width:100%;
+    padding: 2px 8px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    overflow: hidden;
+}
+
+
+/* class for video and img tags for giving height and weight */
+.blog_media
+{
+    width:100%;
+    height:300px;
+    /* Object fit contain will make the image adapt to the width and height full view will be available without hiding any element inside the image */
+    object-fit: contain; 
+
+    border-radius: 4px;
+    object-fit: cover;
+    transition: all ease 0.4s;
+}
+
+/* hover effect for clss blog_media1 elements */
+/* this effect will be applied to the elements having class name .blog_media1  */
+.blog_media1:hover
+{
+    transform: scale(1.1)
+}
+
+/* this targetting the unordered list inside the blog_section class containing elements */
+.blog_section ul
+{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    gap:5px;
+    padding: 4px 7px;
+}
+
+
+
+/* about me starts here */
+
+
+/* this is targetting the about me section */
+#aboutme
+{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 24px;
+    width: 100%;
+
+    /* this will apply a shahdow behind the element and will make the element look elevated */
+    filter: drop-shadow(14px 4px 14px rgba(0,0,0,0.4));
+
+}
+
+
+/* about me ends here */
+
+/* contact me starts here */
+
+
+/* this is targetting the contactme section */
+#contactme
+{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    background-color: white;
+}
+
+
+/* this targetting the form inside the contact me section */
+#contactme form
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background: #f8f5f5;
+    padding: 20px 14px;
+}
+
+
+/* this targetting the label inside the form of contact me section */
+#contactme form label
+{
+    font-weight: 600;
+    font-size: medium;
+}
+
+
+/* this is targetting the submit button in the contactme form */
+#submit_btn
+{
+    background-color: orange;
+    color: black;
+    font-weight: 600;
+    width: fit-content;
+    padding: 8px 14px;
+    border: none;
+    outline: none;
+    filter: drop-shadow(2px 1px 2px rgba(0,0,0,0.4));
+    border-radius: 3px;
+}
+
+
+/* this is hover effect for element having id submit_btn */
+#submit_btn:hover
+{
+    background: #000;
+    color: orange;
+}
+
+
+/* this effect will show when user will click the btn */
+#submit_btn:focus
+{
+    filter: none;
+}
+
+/* this class is for inputs in form */
+.form_input
+{
+    padding: 4px;
+    border:2px solid black;
+    outline: none;
+    border-radius: 4px;
+}
+
+/* this is targetting the unordered list in contact me section */
+#contactme ul
+{
+    display: flex;
+    gap: 20px;
+    border-top: 1.5px solid black;
+    flex-direction: column;
+    font-weight: 600;
+    padding: 4px;
+}
+
+/* this targetting the list items of ul inside the contact me section */
+#contactme ul li
+{
+    background-color:cornflowerblue;
+    width: fit-content;
+    color: white;
+    border-radius: 4px;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.9));
+    padding: 4px 8px;
+}
+
+
+/* this effect will affect the list items inside the ul of contactme section only */
+#contactme ul li:hover
+{
+    color: cornflowerblue;
+    background: white;
+}
+
+
+/* contact me ends here */
+
+
+/* appling css to footer */
+
+footer 
+{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    background: #000;
+    color: white;
+    padding: 14px 12px;
+    gap: 20px;
+}
+
+footer article
+{
+    display: flex;
+    gap:12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px 2px;
+}
+
+footer article section
+{
+    width:32%;
+    display: flex;
+    flex-direction: column;
+    flex:2 2 320px;
+    justify-content: center;
+    padding:2px 4px;
+}
+
+/* targetting the footer's article 1st section */
+footer article section:nth-child(1)
+{
+    align-items: center;
+    border-right: 1px solid white;
+}
+
+/* targetting the footer's article 2nd section */
+footer article section:nth-child(2)
+{
+    border-right: 1px solid white;
+}
+
+
+/* targetting the footer paragarph but only if it is present inside the footer without any section article or div*/
+footer>p
+{
+    background-color: #000;
+    color: rgba(255,255,255,0.9);
+    font-weight: 600;
+    font-size:smaller;
+    text-align: center;
+    padding-top: 16px;
+    border: 1px solid white;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+/* creating a css class for all the links except nav */
+.Links
+{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    font-weight: 500;
+}
+
+.Links:hover
+{
+ background:rgb(104, 104, 176)
+}
+
+
+/* this effect will affect when user will click the element */
+.Links:active
+{
+ background:white;
+ color:black;
+}
+
+
+/* 
+extra classes */
+
+.light_text
+{
+    color:rgba(0,0,0,.7)
+}
+
+.bold_text
+{
+    font-weight: 600;
+}
+
+.medium_text
+{
+    color:rgba(0,0,0,.8);
+    font-weight: 500;
+}
+
+
+/* meadia query */
+
+@media (max-width:595px) {
+    nav
+    {
+        justify-content: flex-start;
+    }
+    nav ul
+    {
+        flex-direction: column;
+        gap:15px;
+    }
+    nav ul li a::before
+    {
+        display: none;
+    }
+    nav ul li a::after
+    {
+        display: none;
+    }
+}
+
+
+
+/* end of css file */
